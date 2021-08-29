@@ -8,17 +8,9 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="facts.html">
+    <link rel="stylesheet" href="#">
 
-    <style>
-        img {
-            width: 50%;
-        }
 
-        .showcase {
-            width: 10%;
-        }
-    </style>
 
 
 </head>
@@ -28,7 +20,7 @@
 
 
     <nav id="mainnavbar" class="navbar navbar-white">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
 
             CAT'S WORLD
         </a>
@@ -37,28 +29,45 @@
                 <a class="nav-link active" href="search.html">EXPLORE</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="facts.html">FACTS</a>
+                <a class="nav-link" href="facts.htmL">FACTS</a>
             </li>
 
         </ul>
     </nav>
 
     <h1 class="header">WELCOME TO THE KINGDOM OF CATS.</h1>
-    <p class="header">Cat's are known to be theruptic so here's some cute pics.</p>
+    <p class="header">What do you want to know about cats? Let's get searching...</p>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
 
 
-    <div class="middle">
-        <div class="catsImgDiv"> </div>
-        <div class="container">
-            <div class="row vertical center">
-                <div class="col-md-8">
-                    <button class="button btn my-2 Random_btn">Random Cats</button>
-                </div>
+
+    <div class="container">
+        <form id="form" autocomplete="off">
+            <div class="form-group">
+                <input type="text" name="" id="search" class="form-control" placeholder="search">
             </div>
+            <div class="form-group">
+                <button class="btn btn btn-block">Search</button>
+
+
+            </div>
+
+        </form>
+        <div id="result">
+
         </div>
     </div>
-    <br>
+
+
+
+
 
 
 
@@ -81,5 +90,10 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 </body>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<script src="search.js"></script>
 
 </html>

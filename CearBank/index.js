@@ -1,4 +1,4 @@
-let generate_btn = document.querySelector(".Random_btn"); // calling the button using class
+let generate_btn = document.querySelector(".Random_btn"); // calling the button using variable
 
 generate_btn.addEventListener("click", fetchPics); // click sound using an event listener
 
@@ -19,10 +19,12 @@ function fetchPics() {
             catsDivEl.setAttribute('src', `${catsDiv}`) //usually would have to specifiy the source, using a back tick to pass image
 
             let catsImgDiv = document.querySelector(".catsImgDiv") //append the new position 
-            catsImgDiv.appendChild(catsDivEl)
+            catsImgDiv.appendChild(catsDivEl) //appends the last node as the last child of a node w3schools helped
 
         })
 
         //catch error
         .catch(err => console.log(err))
 }
+
+

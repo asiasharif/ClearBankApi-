@@ -1,0 +1,128 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kingdom of Cats</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="#">
+
+    <style>
+        .img {
+            width: 30%;
+        }
+    </style>
+
+
+</head>
+
+<body class="jumnbotron">
+
+
+
+    <nav id="mainnavbar" class="navbar navbar-white">
+        <a class="navbar-brand" href="index.html">
+
+            CAT'S WORLD
+        </a>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link active" href="search.html">EXPLORE</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="info.html">FACTS</a>
+            </li>
+
+        </ul>
+    </nav>
+
+    <h1 class="header">WELCOME TO THE KINGDOM OF CATS.</h1>
+    <p class="header">What do you want to know about cats? Let's get searching...</p>
+
+
+    <br>
+    <br>
+
+    <div class="head text-center">
+
+        <button data-toggle="modal" data-target="#model" class="btn btn-transparent my-3 getbutton">Get Facts</button>
+    </div>
+
+
+    <div class="container">
+        <div class="list-group mx-3 my-3 facts">
+        </div>
+    </div>
+
+    <div class="modal" id="model" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Cats facts generator</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="animal_type">Animal Type</label>
+                            <input type="text" class="form-control" value="cat" id="animal_type"
+                                aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">Options: Cat, Dog, Horse & Snail</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="num_facts">Number of Facts</label>
+                            <input type="number" class="form-control" id="num_facts">
+                            <small id="emailHelp" class="form-text text-muted">MAX: 500</small>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary generate_btn" data-dismiss="modal">Generate</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="info1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<script src="facts.js"></script>
+
+</html>
