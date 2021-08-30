@@ -7,7 +7,7 @@ let num_facts = document.querySelector("#num_facts")
 
 //get data
 generate_btn.addEventListener('click', function () { //check the button is working so you can run function
-    let animal_value = animal_type.value.toLowerCase() //to return the data in lower case 
+    let animal_value = animal_type.value.toLowerCase() //to return the data in lower case - built in method
 
     // max amount of facts that can be generated - parseint to convert data into number (not really needed)
 
@@ -34,7 +34,7 @@ generate_btn.addEventListener('click', function () { //check the button is worki
                 para.classList.add('list-group-item') //bootstrap class 
                 para.classList.add('text-dark') //styling
                 para.classList.add('p-3') // padding 3
-                //node will be contaiting the data we fetch, we input it into the node - 'fact'
+                //node will be containing the data we fetch, we input it into the node - 'fact'
                 let node = document.createTextNode(fact);
                 //used append child to append the node we have created so the fact
                 para.appendChild(node);

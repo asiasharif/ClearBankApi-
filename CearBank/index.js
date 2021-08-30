@@ -16,7 +16,7 @@ function fetchPics() {
 
             let catsDivEl = document.createElement("img") // pass element i created e.g image element
             //set the attribute here
-            catsDivEl.setAttribute('src', `${catsDiv}`) //usually would have to specifiy the source, using a back tick to pass image
+            catsDivEl.setAttribute('src', `${catsDiv}`) //usually would have to specifiy the source, using a back tick to pass image - why
 
             let catsImgDiv = document.querySelector(".catsImgDiv") //append the new position 
             catsImgDiv.appendChild(catsDivEl) //appends the last node as the last child of a node w3schools helped
